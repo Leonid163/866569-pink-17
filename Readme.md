@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Леонид](https://up.htmlacademy.ru/adaptive/17/user/866569).
-* Наставник: `Анна Пономарёва`(https://htmlacademy.ru/profile/id153610).
+* Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/id153610).
 
 ---
 
