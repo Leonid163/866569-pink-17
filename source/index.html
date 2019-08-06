@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <title>Pinc</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page">
-  <header>
+  <header class="page-header">
     <h1 class="visually-hidden">Главная страница Pink</h1>
     <a class="page-header__logo">
       <img class="page-header__img" src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="22">
@@ -17,32 +18,32 @@
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a href="#">Главная</a>
+          <a class="site-list__nav" href="#">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
+          <a class="site-list__nav" href="photo.html">Фотографии</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Конкурс</a>
+          <a class="site-list__nav" href="#">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a href="#">HTML Academy</a>
+          <a class="site-list__nav" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="page-header">
+  <main class="page-main">
     <section class="system">
       <h2 class="visually-hidden">Мобильное приложение</h2>
-      <a class="main-system__toggle" href="#">Скачать приложение</a>
+      <a class="main-system__toggle main-click btn btn--main" href="#">Скачать приложение</a>
       <div class="system-list">
-        <a class="system-list__ios-image" href="https://www.apple.com/ios/app-store/" alt="Приложение на ios">Скачать
+        <a class="system-list__ios-image all-image" href="https://www.apple.com/ios/app-store/" alt="Приложение на ios">Скачать
           для
           iOS</a>
-        <a class="system-list__android-image" href="https://play.google.com/store" alt="Приложение на android">Скачать
+        <a class="system-list__android-image all-image" href="https://play.google.com/store" alt="Приложение на android">Скачать
           для
           Android</a>
-        <a class="system-list__windous-image" href="https://www.microsoft.com/ru-ru/store/apps/windows"
+        <a class="system-list__windous-image all-image" href="https://www.microsoft.com/ru-ru/store/apps/windows"
           alt="Приложение на windous">Скачать для Windows</a>
       </div>
       <p class="system-text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
