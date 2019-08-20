@@ -1,0 +1,121 @@
+.main-nav {
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  text-align: center;
+  background-color: #283645;
+  min-height: 66px;
+}
+
+.main-nav__logo-wrapper {
+  border-bottom: 1px solid #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 20px 23px;
+  background-color: #283645;
+}
+
+.main-nav__toggle {
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+}
+
+.main-nav--closed {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav--nojs .page-header {
+  background-position: 50% 0;
+}
+
+@media (max-width: 1199px) {
+  .main-nav--closed .main-nav__logo-wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav--nojs .main-nav__logo-wrapper {
+    background-color: #283645;
+  }
+
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    width: 25px;
+    height: 24px;
+    display: block;
+    background-image: url("../img/icon-menu-cross.svg");
+    background-repeat: no-repeat;
+  }
+
+  .main-nav--closed .main-nav__toggle {
+    display: block;
+    background-image: url("../img/icon-menu-burger.svg");
+    background-repeat: no-repeat;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 69px;
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
+}
+
+@media (min-width: 660px) and (max-width: 1200px) {
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 660px) {
+  .main-nav__logo-wrapper {
+    padding: 27px 20px 42px;
+    align-items: baseline;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: normal;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__logo-wrapper {
+    display: flex;
+    padding-left: 0;
+    padding-right: 172px;
+    border: none;
+    background-color: transparent;
+  }
+}
