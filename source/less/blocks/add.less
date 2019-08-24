@@ -1,0 +1,119 @@
+.add {
+  padding: 20px 0 29px;
+  background-color: #f2f2f2;
+
+  @media (min-width: 660px) {
+    position: relative;
+    width: calc(100% - 385px);
+    padding: 57px 20px 30px 365px;
+  }
+
+  @media (min-width: 960px) {
+    width: 470px;
+    margin: 45px auto 62px;
+    padding: 57px 0 33px 470px;
+  }
+}
+
+.add__img {
+  display: block;
+  width: 280px;
+  height: 374px;
+  margin: 0 auto 38px;
+  overflow: hidden;
+  text-indent: 1000px;
+  white-space: nowrap;
+  background-image: url("../img/photo-road-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+
+  /*@media ($retina) {
+    background-image: url("../img/photo-road-mobile@2x.jpg");
+  }*/
+
+  @media (min-width: 660px) {
+    position: absolute;
+    top: 57px;
+    left: 20px;
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    background-image: url("../img/photo-road-tablet@1x.jpg");
+  }
+
+  @media (min-width: 660px) /*and ($retina)*/ {
+    background-image: url("../img/photo-road-tablet@2x.jpg");
+  }
+
+  @media (min-width: 960px) {
+    left: 80px;
+    background-image: url("../img/photo-road-desktop@1x.jpg");
+  }
+
+  @media (min-width: 960px) /*and ($retina)*/ {
+    background-image: url("../img/photo-road-desktop@2x.jpg");
+  }
+}
+
+.add__submit {
+  width: 276px;
+  margin: 38px auto 0;
+
+  @media (min-width: 660px) {
+    width: calc(100% - 15px);
+    margin: 0 0 0 2px;
+  }
+
+  @media (min-width: 960px) {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+    margin: 79px 0 0;
+  }
+}
+
+.add__btn {
+  width: 100%;
+  margin: 11px 0 12px;
+  color: #d22856;
+  border-color: #d22856;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #d22856;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d22856;
+  }
+
+  &--reset {
+    color: #283645;
+    border-color: #283645;
+    opacity: 0.1;
+
+    &:hover,
+    &:focus {
+      color:#283645;
+      background-color: transparent;
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: #ffffff;
+      background-color: #d22856;
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: 660px) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: 960px) {
+    width: 183px;
+  }
+}
