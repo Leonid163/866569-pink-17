@@ -1,0 +1,331 @@
+.post {
+  padding-top: 20px;
+  background-color: #f2f2f2;
+}
+
+.post__range--big {
+  display: none;
+}
+
+.post__image {
+  display: block;
+  width: 280px;
+  margin: @center;
+  margin-bottom: 40px;
+}
+
+.post__edit {
+  padding-bottom: 6px;
+}
+
+.post__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  margin: @center;
+  padding: 0 38px;
+}
+
+.post__decore {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  margin-bottom: 40px;
+}
+
+.post__icon {
+  fill: #b5b9be;
+}
+
+.post__icon:hover svg {
+  fill: #8d949b;
+}
+
+.post__current svg {
+  fill: #d22856;
+}
+
+.post__current:hover svg {
+  fill: #d22856;
+}
+
+.post__crop {
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin-right: 34px;
+}
+
+.post__color {
+  display: block;
+  width: 48px;
+  height: 43px;
+  margin-right: 40px;
+}
+
+.post__filter {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.post__range {
+  position: relative;
+
+  margin-bottom: 33px;
+}
+
+.post__length {
+  height: 2px;
+
+  background: #000000;
+}
+
+.post__toggle {
+  position: absolute;
+  top: -6px;
+  right: 37px;
+
+  width: 9px;
+  height: 10px;
+
+  background-color: #f2f2f2;
+  border: solid 2px #d22856;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+  }
+}
+
+.post__buttons {
+  box-sizing: border-box;
+  width: 320px;
+  margin: @center;
+  padding: 36px 20px;
+  border-top: 2px solid #dddfe0;
+}
+
+.post__cancel {
+  width: 100%;
+}
+
+.post__upload {
+  margin-bottom: 12px;
+}
+
+@media (min-width: @tablet) {
+  .post {
+    padding-top: 57px;
+    padding-bottom: 50px;
+  }
+
+  .post__container {
+    box-sizing: border-box;
+    width: 660px;
+    margin: @center;
+    padding: 0 20px;
+    display: flex;
+  }
+
+  .post__image {
+    width: 300px;
+    height: auto;
+
+    margin: 0;
+  }
+
+  .post__wrapper {
+    padding: 0;
+    width: auto;
+  }
+
+  .post__decore {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post__change {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    padding: 23px 0;
+    padding-right: 20px;
+    padding-left: 3px;
+
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .post__change:first-of-type {
+    padding-top: 0;
+  }
+
+  .post__range {
+    display: none;
+  }
+
+  .post__range--big {
+    display: block;
+    width: 200px;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .post__crop {
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
+
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  .post__color {
+    width: 24px;
+    height: 24px;
+
+    svg {
+      width: 24px;
+      height: 22px;
+    }
+  }
+
+  .post__filter {
+    width: 24px;
+    height: 24px;
+
+    text-align: center;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .post__icon svg {
+    fill: #d22856;
+  }
+
+  .post__edit {
+    width: 275px;
+    margin-top: 9px;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .post__buttons {
+    width: 260px;
+    padding: 0;
+    margin: 0;
+    margin-top: 67px;
+    border: none;
+  }
+
+  .post__upload {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .post {
+    box-sizing: border-box;
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 55px;
+    padding-left: 60px;
+    padding-right: 40px;
+  }
+
+  .post__edit {
+    width: 410px;
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  .post__container {
+    width: 100%;
+  }
+
+  .post__wrapper {
+    margin-top: -5px;
+    width: 100%;
+  }
+
+  .post__decore {
+    width: 100%;
+  }
+
+  .post__change {
+    width: 410px;
+    padding: 13px 0;
+    padding-right: 30px;
+  }
+
+  .post__crop {
+    width: 48px;
+    height: 44px;
+
+    svg {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  .post__color {
+    margin-top: 5px;
+    width: 48px;
+    height: 44px;
+
+    svg {
+      width: 48px;
+      height: 43px;
+      margin-top: -2px;
+    }
+  }
+
+  .post__filter {
+    width: 48px;
+    height: 44px;
+
+    svg {
+      width: 32px;
+      height: 32px;
+      margin-top: 5px;
+    }
+  }
+
+  .post__range--big {
+    width: 288px;
+    flex-shrink: 0;
+  }
+
+  .post__buttons {
+    display: flex;
+    margin-top: 148px;
+  }
+
+  .post__upload,
+  .post__cancel {
+    width: 183px;
+    margin: 0;
+    padding: 15px 0;
+    flex-shrink: 0;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    line-height: 1;
+  }
+
+  .post__upload {
+    margin-right: 44px;
+  }
+}

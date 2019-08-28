@@ -1,0 +1,54 @@
+.logo {
+  display: block;
+  width: 75px;
+  height: 22px;
+
+  cursor: pointer;
+
+  &:hover .logo__icon,
+  &:focus .logo__icon {
+    fill: #d22856;
+  }
+
+  &:active .logo__icon {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+}
+
+.logo__icon {
+  fill: #ffffff;
+}
+
+.logo__icon--tablet {
+  display: none;
+}
+
+.logo__icon--desktop {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .logo {
+    width: 147px;
+    height: 40px;
+  }
+
+  .logo__icon--tablet {
+    display: block;
+  }
+
+  .logo__icon--mobile {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop) {
+  .logo__icon--tablet {
+    display: none;
+  }
+
+  .logo__icon--desktop {
+    display: block;
+  }
+}
