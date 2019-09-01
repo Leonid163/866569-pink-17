@@ -1,0 +1,120 @@
+.form-contacts__block {
+  border: none;
+  padding: 32px 18px 25px;
+  width: 280px;
+}
+
+.form-contacts__label {
+  padding-left: 22px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856;
+  display: block;
+}
+
+.form-contacts__input {
+  box-sizing: border-box;
+  padding: 14px 10px 14px 20px;
+  margin-top: 5px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  width: 280px;
+  border: 2px solid #e5e5e5;
+  margin-bottom: 18px;
+}
+
+.form-contacts__number-btn,
+.form-contacts__email-btn {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .form-contacts__wrapper {
+    order: 2;
+    margin-bottom: 57px;
+  }
+
+  .form-contacts__input {
+    padding: 15px 10px 14px 20px;
+    box-sizing: border-box;
+    margin: 0;
+    width: 440px;
+  }
+
+  .form-contacts__label {
+    order: 1;
+    margin: 10px 0 28px;
+  }
+
+  .form-contacts__number-wrapper,
+  .form-contacts__email-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-contacts__number-btn,
+  .form-contacts__email-btn {
+    display: block;
+    width: 60px;
+    height: 63px;
+    border: 0;
+    background-color: #e5e5e5;
+  }
+
+  .form-contacts__number-btn {
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .form-contacts__email-btn {
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .form-contacts__block {
+    width: 616px;
+    padding: 0 56px;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 960px) {
+  .form-contacts__block {
+    width: 940px;
+    padding: 42px 58px 0;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .form-contacts__style-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .form-contacts__input {
+    padding: 15px 10px 14px 20px;
+    box-sizing: border-box;
+    margin: 0;
+    width: 315px;
+  }
+
+  .form-contacts__number-wrapper,
+  .form-contacts__email-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 375px;
+  }
+
+  .form-contacts__label {
+    margin: 10px 0 13px;
+    display: block;
+  }
+}
