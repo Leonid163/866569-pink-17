@@ -1,7 +1,9 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+
 * Студент: [Леонид Фадин](https://up.htmlacademy.ru/adaptive/17/user/866569).
 * Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/id153610).
+
 
 ---
 
@@ -24,7 +26,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/866569-pink-17) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1064027-pink-17) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
 <img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808088-259e3a80-a190-11e9-98f7-3c0edd9740f5.jpg">
 
@@ -54,7 +56,7 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.com/htmlacademy-adaptive/866569-pink-17.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-adaptive/866569-pink-17
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/866569-pink-17/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/866569-pink-17?type=dev
+[travis-image]: https://travis-ci.com/htmlacademy-adaptive/1064027-pink-17.svg?branch=master
+[travis-url]: https://travis-ci.com/htmlacademy-adaptive/1064027-pink-17
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/1064027-pink-17/dev-status.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/1064027-pink-17?type=dev
