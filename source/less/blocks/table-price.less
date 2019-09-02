@@ -1,0 +1,190 @@
+.table-price {
+  width: 834px;
+  border-spacing: 0;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.table-price__header--hit {
+  background-image: url("../img/bg-hit.svg");
+  background-size: 74px 73px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.table-price__header {
+  position: relative;
+  padding-top: 17px;
+  padding-bottom: 21px;
+  border-right: 2px solid #e5e5e5;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #283645;
+}
+
+.table-price__header:first-child {
+  display: none;
+  border-right: 0;
+  border-bottom: 2px solid #e5e5e5;
+  background-color: transparent;
+}
+
+.table-price__license-type,
+.table-price__license-price {
+  text-transform: uppercase;
+  display: block;
+}
+
+.table-price__license-price {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.table-price__header:last-child {
+  border-right-color: #283645;
+}
+
+.table-price__cell {
+  padding: 15px 18px 14px 22px;
+  border-right: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.table-price__cell:first-child {
+  display: none;
+  border-left: 2px solid #e5e5e5;
+}
+
+.table-price__feature {
+  text-transform: uppercase;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-price__feature::before {
+  content: attr(data-feature-name);
+}
+
+.table-price__header--hit::before {
+  content: attr(data-hit-text);
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  transform: rotate(-45deg);
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.table-price__feature-value {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.table-price__feature-value--true {
+  width: 31px;
+  height: 21px;
+  background-image: url("../img/icon-yes.svg");
+}
+
+.table-price__feature-value--false {
+  width: 27px;
+  height: 26px;
+  background-image: url("../img/icon-no.svg");
+}
+
+@media (min-width: 660px) {
+  .table-price {
+    width: 100%;
+  }
+
+  .table-price__header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .table-price__header--hit {
+    background-image: url("../img/bg-hit-tablet.svg");
+    background-size: 61px 61px;
+  }
+
+  .table-price__header:first-child {
+    display: table-cell;
+  }
+
+  .table-price__license-price {
+    font-size: 18px;
+  }
+
+  .table-price__license-type {
+    font-size: 16px;
+  }
+
+  .table-price__cell {
+    padding: 7px 20px 8px;
+    width: 25%;
+    font-size: 14px;
+  }
+
+  .table-price__cell:first-child {
+    display: table-cell;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-transform: none;
+  }
+
+  .table-price__feature {
+    justify-content: center;
+  }
+
+  .table-price__header--hit::before {
+    top: 3px;
+    left: 7px;
+  }
+
+  .table-price__feature::before {
+    content: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .table-price__header {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .table-price__cell {
+    padding: 14px 20px 15px;
+  }
+
+  .table-price__header--hit {
+    background-image: url("../img/bg-hit.svg");
+    background-size: 74px 73px;
+  }
+
+  .table-price__header--hit::before {
+    top: 12px;
+    left: 12px;
+  }
+
+  .table-price__cell:first-child {
+    padding-left: 21px;
+    padding-right: 21px;
+    font-size: 18px;
+  }
+
+  .table-price__license-type {
+    font-size: 18px;
+    padding-bottom: 4px;
+  }
+
+  .table-price__license-price {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,66 @@
+.filter-range {
+  margin: 0 auto;
+  width: 240px;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.filter-range__wrapper {
+  position: relative;
+}
+
+.filter-range__scale {
+  height: 2px;
+  cursor: pointer;
+  background-color: #283645;
+}
+
+.filter-range__handle {
+  position: absolute;
+  border: solid 2px #d22856;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  box-sizing: content-box;
+  padding: 0;
+  cursor: pointer;
+}
+
+.filter-range__handle--crop {
+  left: 79%;
+}
+
+.filter-range__handle--fill {
+  left: 14%;
+}
+
+.filter-range__handle--contrast {
+  left: 51%;
+}
+
+.filter-range__handle:active {
+  background-color: #d22856;
+}
+
+@media (min-width: 660px) {
+  .filter-range {
+    margin: 0 auto;
+    margin-left: 26px;
+    width: 200px;
+    padding: 5px;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 960px) {
+  .filter-range {
+    margin: 0 auto;
+    margin-left: 40px;
+    width: 290px;
+    padding: 5px;
+    background-color: transparent;
+  }
+}

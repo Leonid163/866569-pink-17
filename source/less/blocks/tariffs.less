@@ -1,0 +1,57 @@
+.tariffs {
+  background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: 0 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 91px;
+  padding-bottom: 32px;
+}
+
+.tariffs__wrapper {
+  line-height: 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.tariffs__contols {
+  text-align: center;
+  margin: 30px auto 5px;
+}
+
+@media (min-width: 660px) {
+  .tariffs {
+    padding-top: 88px;
+    padding-bottom: 69px;
+    background-size: 100%;
+  }
+
+  .tariffs__contols {
+    display: none;
+  }
+
+  .tariffs__wrapper {
+    position: static;
+    transform: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .tariffs__wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .tariffs {
+    padding-top: 155px;
+    padding-bottom: 96px;
+  }
+}

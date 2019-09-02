@@ -1,0 +1,108 @@
+.form-applications__block {
+  border: none;
+  padding: 38px 18px 25px;
+  width: 280px;
+}
+
+.form-applications__wrapper {
+  background-color: #f2f2f2;
+}
+
+.form-applications__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form-applications__item {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  color: #283645;
+  padding-left: 70px;
+  margin-bottom: 44px;
+  position: relative;
+  cursor: pointer;
+}
+
+.form-applications__item:last-child {
+  margin-bottom: 22px;
+}
+
+.form-applications__option + .form-applications__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.form-applications__option:hover + .form-applications__label::before {
+  border: 2px solid #283645;
+}
+
+.form-applications__option:active + .form-applications__label::before {
+  border: 2px solid #d22856;
+}
+
+.form-applications__option + .form-applications__label::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #d22856;
+}
+
+.form-applications__option:checked + .form-applications__label::after {
+  display: block;
+}
+
+@media (min-width: 660px) {
+  .form-applications__wrapper {
+    order: 1;
+    padding: 1px;
+    background-color: #ffffff;
+    margin-bottom: 56px;
+  }
+
+  .form-applications__block {
+    width: 616px;
+    padding: 0;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form-applications__list {
+    padding-left: 57px;
+    padding-bottom: 38px;
+  }
+
+  .form-applications__item {
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: 960px) {
+  .form-applications__block {
+    width: 100%;
+    padding: 0;
+  }
+
+  .form-applications__wrapper {
+    width: 435px;
+    margin-bottom: 62px;
+  }
+
+  .form-applications__list {
+    padding-left: 75px;
+  }
+}

@@ -1,0 +1,163 @@
+.form__item {
+  margin: 0 auto;
+}
+
+.form__note-addition {
+  display: none;
+}
+
+.form__input:hover {
+  border-color: #283645;
+}
+
+.form__input:active {
+  border-color: #d22856;
+}
+
+.form__title {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #d22856;
+  text-transform: uppercase;
+  width: 230px;
+}
+
+.form__title--contacts {
+  display: none;
+}
+
+.form__title--achievement {
+  margin: 0 auto 44px;
+  padding-top: 37px;
+}
+
+.form__title--applications {
+  margin: 0 auto 3px;
+  padding-top: 37px;
+}
+
+.form__btn-submit {
+  font-family: "OpenSans", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #2aab6d;
+  padding: 17px 15px;
+  width: 280px;
+  border-radius: 2px;
+  line-height: 30px;
+  text-transform: uppercase;
+  display: block;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto 35px;
+  cursor: pointer;
+}
+
+.form__btn-submit:hover {
+  background-color: #1c9b5e;
+}
+
+.form__btn-submit:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form__btn-submit:disabled {
+  color: #ffffff;
+  background-color: #e5e5e5;
+}
+
+.form__note {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.form__note sup {
+  color: #d22856;
+}
+
+@media (min-width: 660px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__note {
+    margin-top: 18px;
+  }
+
+  .form__btn-wrapper {
+    order: 5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-bottom: 49px;
+    width: 620px;
+  }
+
+  .form__title--contacts {
+    display: inline-block;
+    margin: 0 auto 37px;
+    padding-top: 0;
+    width: 258px;
+  }
+
+  .form__title--applications {
+    margin: 0 auto 49px;
+    padding-top: 0;
+    width: 368px;
+  }
+
+  .form__title--achievement {
+    margin: 0 auto 49px;
+    padding-top: 0;
+    width: 432px;
+  }
+
+  .form__btn-submit {
+    margin: 0;
+    width: 300px;
+  }
+}
+
+@media (min-width: 960px) {
+  .form__note-addition {
+    display: inline;
+  }
+
+  .form {
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    width: 940px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .form__title--contacts {
+    display: block;
+    width: 258px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+  }
+
+  .form__btn-wrapper {
+    order: 5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 0;
+    width: 960px;
+  }
+}
