@@ -1,0 +1,29 @@
+.controls__btn {
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 7px;
+  width: 6px;
+  height: 6px;
+  cursor: pointer;
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+}
+
+.controls__btn--current {
+  border: solid 3px #283645;
+  background-color: #ffffff;
+}
+
+.controls__btn:not(.controls__btn--current):hover {
+  background-color: rgba(40, 54, 69, 0.6);
+}
+
+.controls__btn:not(.controls__btn--current):active {
+  background-color: rgba(40, 54, 69, 0.1);
+}
+
+@media (min-width: 960px) {
+  .controls {
+    display: none;
+  }
+}
