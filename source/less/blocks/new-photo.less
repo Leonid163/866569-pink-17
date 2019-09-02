@@ -1,0 +1,262 @@
+.new-photo__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 29px;
+  background-color: #f2f2f2;
+}
+
+.new-photo__filters {
+  padding: 38px 20px 38px;
+}
+
+.new-photo__filters-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 240px;
+}
+
+.new-photo__image {
+  display: block;
+  width: 280px;
+  height: 374px;
+  cursor: pointer;
+}
+
+.new-photo__filter-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgba(40, 54, 69, 0.3);
+}
+
+.new-photo__icon {
+  display: block;
+  fill: rgba(40, 54, 69, 0.3);
+  pointer-events: none;
+}
+
+.new-photo__filter-button:hover {
+  color: rgba(40, 54, 69, 0.5);
+}
+
+.new-photo__filter-button--current .new-photo__icon,
+.new-photo__icon-wrapper .new-photo__icon {
+  color: #d22856;
+}
+
+.new-photo__filter {
+  position: relative;
+  display: none;
+  align-items: center;
+  height: 75px;
+}
+
+.new-photo__icon-wrapper {
+  display: none;
+}
+
+.new-photo__filter::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  bottom: 0;
+  width: calc(100% + 40px * 2);
+  height: 1px;
+  background-color: #dddfe0;
+}
+
+.new-photo__filter--current {
+  display: flex;
+}
+
+.new-photo__button {
+  font-family: "OpenSans", "Arial", sans-serif;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 13px;
+  width: 280px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 30px;
+  line-height: 18px;
+  background-color: transparent;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  color: rgba(40, 54, 69, 0.1);
+  padding: 15px;
+}
+
+.new-photo__button:hover {
+  border: 3px solid rgba(40, 54, 69, 0.3);
+  color: rgba(40, 54, 69, 0.3);
+}
+
+.new-photo__button:active {
+  border: 3px solid transparent;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(40, 54, 69, 0.3);
+}
+
+.new-photo__button--red {
+  border-color: #d22856;
+  color: #d22856;
+}
+
+.new-photo__button--red:hover {
+  color: #ffffff;
+  background-color: #d22856;
+  border: 3px solid transparent;
+}
+
+.new-photo__button--red:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d22856;
+  border: 3px solid transparent;
+}
+
+@media (min-width: 660px) {
+  .new-photo__form {
+    width: 660px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 26px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 29px;
+  }
+
+  .new-photo__image {
+    margin-top: 16px;
+    width: 300px;
+    height: 400px;
+  }
+
+  .new-photo__icon {
+    display: block;
+  }
+
+  .new-photo__filter {
+    display: flex;
+    height: 73px;
+  }
+
+  .new-photo__controls {
+    margin-top: 0;
+    margin-left: auto;
+    width: 270px;
+  }
+
+  .new-photo__filters {
+    margin-bottom: 64px;
+    padding: 0;
+  }
+
+  .new-photo__filters-buttons {
+    display: none;
+  }
+
+  .new-photo__icon-wrapper {
+    display: flex;
+    width: 27px;
+    height: 27px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .new-photo__icon--crop {
+    width: 22px;
+    height: 22px;
+  }
+
+  .new-photo__filter-range {
+    margin-right: 18px;
+    width: 202px;
+  }
+
+  .new-photo__icon--fill {
+    width: 24px;
+    height: 24px;
+  }
+
+  .new-photo__icon--contrast {
+    width: 16px;
+    height: 16px;
+  }
+
+  .new-photo__button {
+    margin-bottom: 26px;
+    width: 260px;
+  }
+
+  .new-photo__filter::after {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 960px) {
+  .new-photo__form {
+    width: 940px;
+    padding: 41px 62px 53px 80px;
+  }
+
+  .new-photo__controls {
+    margin-right: 0;
+    width: 410px;
+  }
+
+  .new-photo__filters {
+    margin-bottom: 145px;
+  }
+
+  .new-photo__icon-wrapper {
+    width: 48px;
+    height: 48px;
+  }
+
+  .new-photo__icon--crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  .new-photo__filter-range {
+    margin-right: 30px;
+    width: 288px;
+  }
+
+  .new-photo__icon--fill {
+    width: 48px;
+    height: 48px;
+  }
+
+  .new-photo__icon--contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+  .new-photo__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .new-photo__button {
+    margin: 0;
+    width: 45%;
+  }
+}

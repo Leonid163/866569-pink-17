@@ -1,0 +1,71 @@
+.form-impression__block {
+  border: none;
+  padding: 32px 18px 25px;
+  width: 280px;
+}
+
+.form-impression__label {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form-impression__textarea {
+  font-family: "OpenSans", "Arial", sans-serif;
+  resize: none;
+  box-sizing: border-box;
+  padding: 14px 10px 4px 20px;
+  margin-top: 5px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  width: 280px;
+  border: 2px solid #e5e5e5;
+  margin-bottom: 18px;
+}
+
+@media (min-width: 660px) {
+  .form-impression__wrapper {
+    margin-bottom: 64px;
+    order: 4;
+  }
+
+  .form-impression__block {
+    width: 616px;
+    padding: 0;
+    border: 2px solid #e5e5e5;
+    position: relative;
+  }
+
+  .form-impression__label {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 243px;
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .form-impression__textarea {
+    padding: 14px 10px 0 20px;
+    margin: 45px 58px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 960px) {
+  .form-impression__block {
+    width: 940px;
+  }
+
+  .form-impression__textarea {
+    width: 820px;
+    margin: 41px 58px;
+    max-height: 128px;
+  }
+}
