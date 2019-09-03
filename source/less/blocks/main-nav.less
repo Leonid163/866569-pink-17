@@ -20,9 +20,16 @@
 .main-nav__toggle {
   border: none;
   cursor: pointer;
-  width: 50px;
-  height: 24px;
   background-color: transparent;
+  color: #ffffff;
+}
+
+.main-nav__toggle:hover {
+  color: #d22856;
+}
+
+.main-nav__toggle:active {
+  opacity: 0.3;
 }
 
 .main-nav--closed {
@@ -33,7 +40,7 @@
   background-position: 50% 0;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 959px) {
   .main-nav--closed .main-nav__logo-wrapper {
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -46,18 +53,24 @@
     display: none;
   }
 
-  .main-nav--opened .main-nav__toggle {
+  .main-nav--opened .main-nav__cross {
     width: 25px;
     height: 24px;
     display: block;
-    background-image: url("../img/icon-menu-cross.svg");
-    background-repeat: no-repeat;
   }
 
-  .main-nav--closed .main-nav__toggle {
+  .main-nav--opened .main-nav__burger {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__burger {
     display: block;
-    background-image: url("../img/icon-menu-burger.svg");
-    background-repeat: no-repeat;
+    width: 50px;
+    height: 24px;
+  }
+
+  .main-nav--closed .main-nav__cross {
+    display: none;
   }
 
   .main-nav--opened .main-nav__wrapper {
@@ -81,7 +94,7 @@
   display: block;
 }
 
-@media (min-width: 660px) and (max-width: 1200px) {
+@media (min-width: 660px) and (max-width: 960px) {
   .main-nav--opened .main-nav__wrapper {
     position: absolute;
     top: 110px;
@@ -97,7 +110,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .main-nav {
     display: flex;
     align-items: center;

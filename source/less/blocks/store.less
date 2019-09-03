@@ -1,6 +1,6 @@
 .store {
   text-align: center;
-  padding: 442px 20px 30px;
+  padding: 442px 20px 32px;
   margin: 0 auto;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@
 }
 
 .store__button {
-  padding: 15px 45px 14px;
+  padding: 13px 35px 13px;
   font-size: 18px;
   font-weight: bold;
   line-height: 18px;
@@ -65,10 +65,22 @@
 }
 
 @media (min-width: 660px) {
+  .store__button {
+    padding: 12px 46px 13px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+  }
+
   .store {
     width: 660px;
     box-sizing: border-box;
-    padding: 95px 345px 108px 20px;
+    padding: 95px 345px 111px 20px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: 50% 75px;
     background-size: 700px 545px;
@@ -83,17 +95,14 @@
     margin: 0 auto;
   }
 
-  .store__button {
-    padding: 15px 52px 14px;
-  }
-
   .store__list {
     margin-top: 63px;
     margin-bottom: 33px;
     margin-left: 9px;
     padding: 0;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 240px;
   }
 
   .store__text {
@@ -105,24 +114,33 @@
     text-align: center;
     margin: 0 auto 53px;
     font-size: 40px;
-    font-weight: lighter;
+    font-weight: 300;
     color: #ffffff;
     width: 200px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .store {
-    padding: 112px 710px 123px 70px;
+    padding: 112px 650px 125px 10px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: calc((100% + 141px) / 2) 100px;
-    width: 1200px;
+    width: 960px;
     box-sizing: border-box;
     background-size: 1050px 645px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");
     }
+  }
+
+  .store__button {
+    padding: 12px 27px 13px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 2px;
   }
 
   .store__title {
@@ -133,7 +151,6 @@
   }
 
   .store__list {
-    margin-top: 84px;
-    margin-bottom: 50px;
+    margin: 84px auto 50px;
   }
 }
