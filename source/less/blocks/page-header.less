@@ -15,11 +15,11 @@
   color: #ffffff;
 }
 
-.page-header__logo-image:hover {
+.page-header__logo-image:not(.page-header__logo-image--current):hover {
   color: #d22856;
 }
 
-.page-header__logo-image:active {
+.page-header__logo-image:not(.page-header__logo-image--current):active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -43,7 +43,7 @@
   .page-header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% bottom;
+    background-position: 50% top;
     background-size: 1200px 729px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

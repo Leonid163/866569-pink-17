@@ -4,18 +4,19 @@
   align-items: center;
   box-sizing: border-box;
   padding-top: 20px;
-  padding-bottom: 29px;
+  padding-bottom: 26px;
   background-color: #f2f2f2;
 }
 
 .new-photo__filters {
-  padding: 38px 20px 38px;
+  padding: 37px 20px 38px;
 }
 
 .new-photo__filters-buttons {
   display: flex;
   justify-content: space-around;
   width: 240px;
+  padding-left: 3px;
 }
 
 .new-photo__image {
@@ -41,12 +42,12 @@
 
 .new-photo__icon {
   display: block;
-  fill: rgba(40, 54, 69, 0.3);
+  color: rgba(40, 54, 69, 0.3);
   pointer-events: none;
 }
 
-.new-photo__filter-button:hover {
-  color: rgba(40, 54, 69, 0.5);
+.new-photo__filter-button:hover .new-photo__icon {
+  color: rgba(40, 54, 69, 0.8);
 }
 
 .new-photo__filter-button--current .new-photo__icon,
@@ -58,7 +59,7 @@
   position: relative;
   display: none;
   align-items: center;
-  height: 75px;
+  height: 73px;
 }
 
 .new-photo__icon-wrapper {
@@ -68,9 +69,9 @@
 .new-photo__filter::after {
   content: "";
   position: absolute;
-  left: -40px;
-  bottom: 0;
-  width: calc(100% + 40px * 2);
+  left: -35px;
+  bottom: 1px;
+  width: calc(100% + 35px * 2);
   height: 1px;
   background-color: #dddfe0;
 }
@@ -136,7 +137,7 @@
     flex-direction: row;
     align-items: flex-start;
     padding-top: 40px;
-    padding-bottom: 29px;
+    padding-bottom: 28px;
   }
 
   .new-photo__image {
@@ -193,8 +194,8 @@
   }
 
   .new-photo__icon--contrast {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
   }
 
   .new-photo__button {
@@ -211,7 +212,7 @@
 @media (min-width: 960px) {
   .new-photo__form {
     width: 940px;
-    padding: 41px 62px 53px 80px;
+    padding: 40px 62px 52px 80px;
   }
 
   .new-photo__controls {
@@ -220,7 +221,7 @@
   }
 
   .new-photo__filters {
-    margin-bottom: 145px;
+    margin-bottom: 143px;
   }
 
   .new-photo__icon-wrapper {

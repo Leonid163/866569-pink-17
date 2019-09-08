@@ -50,6 +50,14 @@
   border: 2px solid #d22856;
 }
 
+.form-applications__option:focus + .form-applications__label {
+  outline: 1px dashed #d22856;
+}
+
+.form-applications__item:focus {
+  outline: none;
+}
+
 .form-applications__option + .form-applications__label::after {
   display: none;
   content: "";
@@ -72,7 +80,7 @@
     order: 1;
     padding: 1px;
     background-color: #ffffff;
-    margin-bottom: 56px;
+    margin-bottom: 64px;
   }
 
   .form-applications__block {

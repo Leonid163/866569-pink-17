@@ -52,34 +52,45 @@
   .form-contacts__email-wrapper {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
   }
 
-  .form-contacts__number-btn,
-  .form-contacts__email-btn {
+  .form-contacts__number-wrapper::before {
+    content: "";
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     display: block;
     width: 60px;
     height: 63px;
     border: 0;
     background-color: #e5e5e5;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
-  .form-contacts__number-btn {
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-
-  .form-contacts__email-btn {
+  .form-contacts__email-wrapper::before {
+    content: "";
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    display: block;
+    width: 60px;
+    height: 63px;
+    border: 0;
+    background-color: #e5e5e5;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   .form-contacts__block {
     width: 616px;
-    padding: 0 56px;
+    padding: 45px 56px 0;
     border: 2px solid #e5e5e5;
     box-sizing: border-box;
+    position: relative;
   }
 }
 
